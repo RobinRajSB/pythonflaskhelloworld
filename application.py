@@ -6,4 +6,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
+    z = tf.constant(5.2, name="x", dtype=tf.float32)
+
     return "Hello World!"
